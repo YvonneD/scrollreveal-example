@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom:50%;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: black
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+.container {
+    width: 70%;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+.col-md-3 {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.one {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/assault-rifle-burst-rare.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.ten:hover,
+.eleven:hover,
+.twelve:hover,
+.thirteen:hover,
+.fourteen:hover,
+.fifteen:hover,
+.sixteen:hover,
+.seventeen:hover,
+.eighteen:hover,
+.nineteen:hover,
+.twenty:hover,
+.twentyone:hover,
+.twentytwo:hover,
+.twentythree:hover,
+.twentyfour:hover,
+.twentyfive:hover,
+.twentysix:hover,
+.twentyseven:hover,
+.twentyeight:hover,
+.twentynine:hover {
+    background-blend-mode: multiple;
+    opacity: 0.9;
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+
+.two {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/assault-rifle-burst.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.three {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/assault-rifle-m4.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.four {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/assault-rifle-scar.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.five {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/assault-rifle-scoped.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.six {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/light-machine-gun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.seven {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/minigun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.eight {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/suppressed-assault-rifle.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.nine {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/thermal-scope-assault-rifle.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.ten {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/double-barrel-shotgun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.eleven {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/heavy-shotgun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twelve {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/pump-shotgun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.thirteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/tactical-shotgun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.fourteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/dual-pistol.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.fifteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/grappler.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.sixteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/hand-cannon.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.seventeen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/pistol.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.eighteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/revolver.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.nineteen {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/suppressed-pistol.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twenty {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/compact-gun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentyone {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/submachine-gun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentytwo {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/suppressed-submachine-gun.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentythree {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/bolt-action-sniper-rifle.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentyfour {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/heavy-sniper.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentyfive {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/hunting-rifle.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentysix {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/semi-auto-sniper-rifle.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentyseven {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/grenade-launcher.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.tweentyeight {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/guided-missile.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.twentynine {
+    background: url(https://db.fortnitetracker.com/app/images/fortnite/weapons_v2/rocket-launcher.png) center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.col-md-3 p {
+    display: block;
+    opacity: 0;
+    font-size: 1.5em;
+    transition: opacity 1s ease-in-out;
+}
+
+.col-md-3:hover p {
+    color: #fff;
+
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 1;
+    animation: fly 1s ease-in;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+p.title:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transition: transform 600ms ease-in-out;
+}
+
+p.title:hover:after {
+    transform: scaleX(1);
+}
+
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 2em;
+    }
+    .container {
+        width: 90%;
+        margin: 5px auto;
+        display: flex;
+    }
+    .col-md-3 {
+        display: block;
+        width: 50vw;
+    }
+}
